@@ -2,7 +2,7 @@ import { v4 as uuid } from "uuid";
 import CustomerFactory from "../../../domain/customer/factory/customer.factory";
 import CustomerRepositoryInterface from "../../../domain/customer/repository/custumer-repository.interface";
 import Address from "../../../domain/entity/address";
-import { InputCreateCustomerDto, OutputCreateCustomerDto } from "./create,customer.dto";
+import { InputCreateCustomerDto, OutputCreateCustomerDto } from "./create.customer.dto";
 
 export default class CreateCustomerUseCase {
 
