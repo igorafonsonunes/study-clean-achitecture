@@ -5,7 +5,7 @@ import CustomerModel from "../../../infrastructure/customer/repository/sequelize
 import CustomerRepository from "../../../infrastructure/customer/repository/sequelize/customer.repository";
 import ListCustomerUseCase from "./list.customer.usecase";
 
-describe('Test list custumer usecase unit', () => {
+describe('Test list custumer usecase integration', () => {
 
     let sequelize: Sequelize;
 

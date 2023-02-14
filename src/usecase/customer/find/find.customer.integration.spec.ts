@@ -34,17 +34,17 @@ describe('Test find custumer usecase integration', () => {
         const usecase = new FindCustomerUseCase(customerRepository);
 
         //CREATE A CUSTUMER
-        const customer = new Customer("123", "John");
+        const customer = new Customer("123456", "John");
         const address = new Address("Street", 123, "Zip", "City");
         customer.changeAddress(address);
         await customerRepository.create(customer);
 
         const input: InputFindCustomerDto = {
-            id: "123"
+            id: "123456"
         };
 
         const output: OutputFindCustomerDto = {
-            id: "123",
+            id: "123456",
             name: "John",
             address: {
                 street: "Street",

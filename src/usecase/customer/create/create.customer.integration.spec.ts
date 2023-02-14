@@ -14,7 +14,7 @@ const input = {
     }
 };
 
-describe('Test find custumer usecase integration', () => {
+describe('Test create custumer usecase integration', () => {
 
     let sequelize: Sequelize;
 
