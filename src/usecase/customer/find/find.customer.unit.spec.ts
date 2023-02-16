@@ -63,7 +63,7 @@ describe('Test find custumer usecase unit', () => {
 
         expect(() => {
             return usecase.execute(input);
-        }).rejects.toThrow("Customer not Found.")
+        }).rejects.toThrow("Customer not found.")
     });
 
 });
