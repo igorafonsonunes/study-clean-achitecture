@@ -50,7 +50,7 @@ export default class ProductB extends Entity implements ProductInterface {
     if (this._price < 0) {
       this.notification.addError({
         context: "product-b",
-        message: "Price must be greater than zero"
+        message: "price must be greater than 0"
       });
     }
     return true;
