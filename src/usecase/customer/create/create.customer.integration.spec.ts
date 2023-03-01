@@ -59,7 +59,7 @@ describe('Test create custumer usecase integration', () => {
         const createCustomerUseCase = new CreateCustomerUseCase(customerRepository);
 
         input.name = "";
-        await expect(createCustomerUseCase.execute(input)).rejects.toThrow("Name is required.");
+        await expect(createCustomerUseCase.execute(input)).rejects.toThrow("Name is required");
         input.name = "John";
     });
 
